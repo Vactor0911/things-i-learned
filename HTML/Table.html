@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style> /*CSS style definition*/
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 12px;
+        }
+        .col1 {
+            width: 60px; /*This property is not web standarded. Avoid to use it in most cases.*/
+        }
+        .col2 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!--Basic Table-->
+    <table> <!--Creates table (chart)-->
+        <caption>Basic Table</caption> <!--The name or description of the table-->
+        <tr> <!--Row section; Must contain <th> or <td> tag-->
+            <th>Column1</th> <!--Table header; The name of each columns-->
+            <th>Column2</th>
+            <th>Column3</th>
+        </tr>
+        <tr>
+            <td>Item A1</td> <!--Table description; The desciption of items; data to displayed should be here-->
+            <td>Item A2</td>
+            <td>Item A3</td>
+        </tr>
+        <tr>
+            <td>Item B1</td>
+            <td>Item B2</td>
+            <td>Item B3</td>
+        </tr>
+    </table>
+
+    <hr />
+
+    <!--Table Group Tags-->
+    <table>
+        <caption>Group Tags</caption>
+        <colgroup> <!--Wraps columns in table-->
+            <col class="col1" /> <!--Divides each column of the table by <col> tags-->
+            <col class="col2" />
+            <col class="col3" span="2" /> <!--<col> tag can also divides multiple columns by using span property-->
+        </colgroup>
+        <thead> <!--Wraps all <td> tags in table-->
+            <tr>
+                <th>Index A</th>
+                <th>Index B</th>
+                <th>Index C</th>
+                <th>Index D</th>
+            </tr>
+        </thead>
+        <tbody> <!--Wraps all <td> tags in each rows of the table-->
+            <tr>
+                <td>A1</td>
+                <td>B1</td>
+                <td>C1</td>
+                <td>D1</td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+                <td>D2</td>
+            </tr>
+        </tbody>
+        <tfoot> <!--Wraps all <td> tags in last row of the table-->
+            <tr>
+                <td>A3</td>
+                <td>B3</td>
+                <td>C3</td>
+                <td>D3</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr />
+
+    <!--Row & Col span-->
+    <table>
+        <caption>Rol span & Col span</caption>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th rowspan="2">4</th> <!--Can be merged between <th> and <td>-->
+        </tr>
+        <tr>
+            <td rowspan="2">A1</td> <!--Merge 2 cells vertically-->
+            <td>A2</td>
+            <td>A3</td>
+            <!--Merged from table header-->
+        </tr>
+        <tr>
+            <!--Merged from 1st row-->
+            <td>B2</td>
+            <td>B3</td>
+            <td>B4</td>
+        </tr>
+        <tr>
+            <td>C1</td>
+            <td colspan="3">C2</td> <!--Merge 3 cells horizontally-->
+            <!--Merged from 2nd column-->
+            <!--Merged from 2nd column-->
+        </tr>
+    </table>
+</body>
+</html>
