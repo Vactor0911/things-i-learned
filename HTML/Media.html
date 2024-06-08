@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio</title>
+    <style>
+      img {
+        margin: 10px;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 id="top">Image Tag</h2>
+    <img src="../rsc/SampleImage.png" alt="Helldivers 2 Wallpaper" width="500" />
+    <img src="../rsc/SampleImage.png" alt="Helldivers 2 Wallpaper" height="100" />
+    <!--
+    [Image Properties]
+    src:    Specifies the URL of the image. Always required.
+    alt:    Specifies an alternate text for the image. Optional.
+    width:  Specifies the width of the image. Must be an integer.
+    height: Specifies the height of the image. Must be an integer.
+    -->
+    <hr />
+
+    <div>
+      <h2>Audio Tag</h2>
+      <img src="../rsc/Forza Horizon 4.webp" height="400" />
+      <!--Using src tag-->
+      <audio controls src="../rsc/A Moment Apart - ODESZA.mp3" type="audio/mpeg"></audio>
+    </div>
+
+    <div>
+      <img src="../rsc/Forza Horizon 5.webp" height="400" />
+      <!--Using source tag-->
+      <audio controls>
+        <source src="../rsc/Encanto - Urbandawn.mp3" type="audio/mpeg" />
+        <source src="../rsc/Encanto - Urbandawn.mp3" type="audio/mpeg" />
+        <!--
+        If the browser does not support the first source, it will try the second source
+        -->
+      </audio>
+    </div>
+    <hr />
+
+    <div class="video">
+      <h2>Video Tag</h2>
+      <video controls src="../rsc/Forza Horizon 4 - Main Menu.mp4" type="video/mp4" height="400" poster="../rsc/Forza Horizon 4.webp"></video>
+
+      <!--
+      <video controls>
+        <source src="../rsc/Forza Horizon 4 - Main Menu.mp4" type="video/mp4" />
+        <source src="../rsc/Forza Horizon 4 - Main Menu.mp4" type="video/mp4" />
+
+        If the browser does not support the first source, it will try the second source
+      </video>
+      -->
+    </div>
+    <!--
+    [Audio & Video Properties]
+    controls: Specifies that the browser should provide controls for the audio/video playback.
+    src:      Specifies the URL of the audio/video file. Always required.
+    autoplay: Specifies that the audio/video will start playing as soon as it is ready. 
+              *Note: Chrome, FireFox and Safari have disabled autoplay.
+    loop:     Specifies that the audio/video will start over again, every time it is finished.
+    muted:    Specifies that the audio output of the video should be muted.
+    preload:  Specifies if and how the author thinks the audio/video should be loaded when the page loads.
+    width:    Specifies the width of the audio/video. Must be an integer.
+    height:   Specifies the height of the audio/video. Must be an integer.
+    poster:   Specifies an image to be shown while the video is downloading, or until the user hits the play button.
+              *Video only.
+    -->
+    <hr/>
+
+    <div>
+      <h2>Hyperlink Tag</h2>
+      <a href="../rsc/Forza Horizon 4.webp" download>
+        <img src="../rsc/Forza Horizon 4.webp" height="300" alt="Forza Horizon 4 Wallpaper; Click to download" />
+      </a>
+      <a href="https://store.steampowered.com/app/1293830/Forza_Horizon_4/" target="_blank">Forza Horizon 4 on Steam</a>
+      <a href="#top">가장 위로 이동</a> <!--Link to the element which has id that named "top"-->
+      <a href="mailto: vactor0911@gmail.com">Contact me</a> <!--Send an email to the email address-->
+    </div>
+    <!--[Hyperlink Properties]
+    href:     Specifies the URL of the page the link goes to. Always required.
+    download: Specifies that the target will be downloaded when a user clicks on the hyperlink.
+    target:   Specifies where to open the linked document.
+              - "_blank" opens in a new tab.
+              - "_self" opens in the same frame.
+              - "_parent" opens in the parent frame.
+              - "_top" opens in the full body of the window.
+    tel:      Specifies the telephone number to call.
+    mailto:   Specifies the email address to send an email to.
+    -->
+  </body>
+</html>
