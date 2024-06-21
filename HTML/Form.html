@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="username">ID</label>
+        <input type="text" id="username" />
+        <!-- The value of the "for" attribute in the label tag should match the value of the "id" attribute in the input tag -->
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" />
+      </div>
+      <input type="submit" value="제출하기" />
+    </form>
+
+    <fieldset>
+      <legend>Input Tags</legend>
+      <ul>
+        <li>
+          <label for="text">Text</label>
+          <input type="text" id="text" required />
+        </li>
+        <li>
+          <label for="number">Number</label>
+          <input type="number" id="number" required min="10" max="30" />
+          <!-- Prevents input of non-numeric characters and displays a scroll button on the right side of the input field. -->
+          <!-- You can set the maximum and minimum values that can be entered using the min and max attributes. -->
+        </li>
+        <li>
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+          <!-- Automatically validates the email when sending data to the server. -->
+        </li>
+        <li>
+          <label for="tel">Phone Number</label>
+          <input type="tel" id="tel" required />
+          <!-- Automatically validates the phone number when sending data to the server. Displays a numeric keypad instead of a text keypad on mobile devices. -->
+        </li>
+        <li>
+          <label for="url">URL</label>
+          <input type="url" id="url" required />
+        </li>
+        <li>
+          <label for="password">Password</label>
+          <input type="password" id="password" required />
+        </li>
+        <li>
+          <label for="range">Range</label>
+          <input type="range" id="range" required min="5" max="10" />
+          <!-- Displays a scroll bar and allows you to set the minimum and maximum values using the min/max attributes -->
+        </li>
+      </ul>
+      <input type="submit" value="제출하기" />
+    </fieldset>
+
+    <fieldset>
+      <legend>Date Tags</legend>
+      <ul>
+        <li>
+          <label for="date">Date</label>
+          <input
+            type="date"
+            id="date"
+            required
+            min="2020-01-01"
+            max="2026-12-31"
+          />
+          <!-- Displays a date picker -->
+          <!-- Specify the range of selectable dates using the min and max attributes -->
+        </li>
+        <li>
+          <label for="month">Month</label>
+          <input type="month" id="month" required />
+        </li>
+        <li>
+          <label for="week">Week</label>
+          <input type="week" id="week" required />
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>Time Tags</legend>
+      <ul>
+        <li>
+          <label for="time">Time</label>
+          <input type="time" id="time" required min="07:00" max="21:00" />
+          <!-- Displays a time picker -->
+          <!-- Specify the range of selectable times using the min and max attributes -->
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>etc</legend>
+      <ul>
+        <li>
+          <input type="file" id="file" multiple />
+          <!-- Displays a file selection dialog box -->
+          <!-- The multiple attribute allows you to select multiple files -->
+        </li>
+        <li>
+          <input type="hidden" id="hiddenData" value="data" />
+          <!-- Hidden input field that does not appear on the screen -->
+          <!-- Used to send data to the server without displaying it on the screen -->
+        </li>
+      </ul>
+    </fieldset>
+  </body>
+</html>
