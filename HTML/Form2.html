@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form2</title>
+  </head>
+  <body>
+    <form action="">
+      <!--Check Boxes-->
+      <fieldset>
+        <legend>CheckBox</legend>
+        <ul>
+          <li>
+            <labal for="checkbox1">CheckOption1</labal>
+            <input type="checkbox" id="checkbox1" />
+          </li>
+          <li>
+            <labal for="checkbox2">CheckOption2</labal>
+            <input type="checkbox" id="checkbox2" />
+          </li>
+          <li>
+            <labal for="checkbox3">CheckOption3</labal>
+            <input type="checkbox" id="checkbox3" />
+          </li>
+          <li>
+            <labal for="checkbox4">CheckOption4</labal>
+            <input type="checkbox" id="checkbox4" checked />
+          </li>
+          <li>
+            <labal for="checkbox5">CheckOption5</labal>
+            <input type="checkbox" id="checkbox5" />
+          </li>
+        </ul>
+      </fieldset>
+      <!--Radio Buttons-->
+      <fieldset>
+        <legend>RadioButton</legend>
+        <ul>
+          <li>
+            <label for="radio1">RadioOption1</label>
+            <input type="radio" id="radio1" name="radio" />
+          </li>
+          <li>
+            <label for="radio2">RadioOption2</label>
+            <input type="radio" id="radio2" name="radio" checked />
+          </li>
+          <li>
+            <label for="radio3">RadioOption3</label>
+            <input type="radio" id="radio3" name="radio" />
+          </li>
+        </ul>
+      </fieldset>
+      <!--Text Areas-->
+      <fieldset>
+        <legend>TextArea</legend>
+        <textarea name="" id="" rows="10" cols="40">Default Text</textarea>
+      </fieldset>
+      <!--Combo Boxes-->
+      <fieldset>
+        <legend>Select</legend>
+        <select name="" id="">
+          <option value="1">Option1</option>
+          <option value="2" selected>Option2</option>
+          <option value="3">Option3</option>
+          <option value="4">Option4</option>
+          <option value="5">Option5</option>
+        </select>
+      </fieldset>
+      <!--Data Lists-->
+      <fieldset>
+        <legend>DataList</legend>
+        <input list="myList" id="" />
+        <datalist id="myList">
+          <option value="Option1"></option>
+          <option value="Option2"></option>
+          <option value="Option3"></option>
+          <option value="Option4"></option>
+          <option value="Option5"></option>
+        </datalist>
+      </fieldset>
+      <!--Buttons-->
+      <fieldset>
+        <legend>Button</legend>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button" onclick="alert('HelloWorld!')">Button</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
