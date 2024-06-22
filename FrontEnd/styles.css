@@ -1,0 +1,21 @@
+@import url("http://font.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+div {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
+  font-size: 200px;
+  font-weight: 900;
+  transition: color .3s ease-in-out, text-shadow .3s ease-in-out;
+  cursor: pointer;
+}
+
+p:hover {
+    text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15), -5px -5px 20px #FF2D95, 10px 10px 20px #0099BB;
+}
