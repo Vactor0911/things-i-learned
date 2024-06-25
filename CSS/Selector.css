@@ -1,0 +1,54 @@
+* { /* Universal selector */
+    margin: 20;
+    padding: 0;
+    text-align: center;
+}
+
+h2 { /* Type selector */
+    color: skyblue;
+}
+
+p { /* Type selector */
+    color: gray;
+    font-weight: 300;
+}
+
+.highlight { /* Class selector */
+    color: black;
+    font-weight: bold;
+    background-color: yellow;
+}
+
+#select { /* ID selector */
+    color: red;
+    font-weight: bold;
+}
+
+span[id] { /* Attribute selector */ /* Selects all <span> elements with an id attribute */
+    background-color: lightskyblue;
+}
+
+a[target] { /* Attribute selector */ /* Selects all <a> elements with a target attribute */
+    text-decoration: none;
+}
+
+a[target="_parent"] { /* Attribute selector */ /* Selects all <a> elements with a target attribute equal to "_parent" */
+    color: crimson;
+}
+
+a[href*="ko"] { /* Attribute selector */ /* Selects all <a> elements with an href attribute containing "ko" */ /* Search in sentence */
+    color: blue;
+    font-weight: bold;
+}
+
+h2[class^="l"] { /* Attribute selector */ /* Selects all <h2> elements with a class attribute starting with "l" */
+    color: chartreuse;
+}
+
+h2[class$="n"] { /* Attribute selector */ /* Selects all <h2> elements with a class attribute ending with "n" */
+    color: gold;
+}
+
+p[class~="paragraph"] { /* Attribute selector */ /* Selects all <p> elements with a class attribute containing "paragraph" */ /* Search by word */
+    font-weight: bold;
+}
