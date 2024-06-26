@@ -1,6 +1,4 @@
 * { /* Universal selector */
-    margin: 20;
-    padding: 0;
     text-align: center;
 }
 
@@ -51,4 +49,9 @@ h2[class$="n"] { /* Attribute selector */ /* Selects all <h2> elements with a cl
 
 p[class~="paragraph"] { /* Attribute selector */ /* Selects all <p> elements with a class attribute containing "paragraph" */ /* Search by word */
     font-weight: bold;
+}
+
+h2, p { /* Grouping selector */
+    margin: 20;
+    padding: 0;
 }

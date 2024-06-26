@@ -1,0 +1,24 @@
+section h2 {
+  /* Descendant Selector */ /* This selector will select all the li elements inside the section element */
+  color: blue;
+}
+
+ul > li {
+  /* Child Selector */ /* This selector will select all the li elements that are direct children of the ul element */
+  color: deepskyblue;
+}
+
+p ~ span {
+  /* General Sibling Selector */ /* This selector will select all the span elements that are siblings of a p element */
+  color: red;
+}
+
+p + code {
+  /* Adjacent Sibling Selector */ /* This selector will select all the code elements that are immediately preceded by a p element */
+  font-weight: bold;
+}
+
+.first-item + li {
+  /* Adjacent Sibling Selector */ /* This selector will select all the li elements that are immediately preceded by a li element with the class "first-item" */
+  color: red;
+}
