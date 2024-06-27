@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 10px;
+    padding: 0;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+
+p {
+    font-family: 'Roboto', sans-serif; /* Browser will show sans-serif if it failed to display Roboto */
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.font-weight-300 {
+    font-weight: 300;
+}
+
+.font-varient {
+    font-variant: small-caps;
+}
+
+.px {
+    font-size: 20px;
+}
+
+.rem {
+    font-size: 1rem;
+}
+
+.em {
+    font-size: 2em;
+}
+
+.rect {
+    width: 30vw;
+    height: 20vh;
+    background-color: yellow;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    word-break: break-all;
+}
+
+.vw {
+    font-size: 2vw;
+}
+
+.vh {
+    font-size: 3vh;
+}
+
+.shadow {
+    text-shadow: 3px 3px 5px #333333;
+    font-size: 32px;
+}
