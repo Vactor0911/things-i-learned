@@ -1,0 +1,33 @@
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#scores th,
+#scores td {
+  border: 2px solid #222222;
+  padding: 5px;
+}
+
+#scores {
+  border-collapse: collapse;
+  width: 40%;
+}
+
+#scores th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: gray;
+  color: white;
+}
+
+#scores tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+#scores tr:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
