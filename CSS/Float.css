@@ -1,0 +1,37 @@
+.containter {
+  width: 30vw;
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+img {
+  height: 16vh;
+  margin: 10px;
+}
+
+img.html {
+  float: left;
+}
+
+img.css {
+  float: right;
+}
+
+p.clear {
+  clear: both;
+}
+
+p#bold {
+  font-weight: bold;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+  text-align: center;
+}
+
+span {
+    font-size: 1.5em;
+    font-weight: 900;
+}
