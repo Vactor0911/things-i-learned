@@ -1,0 +1,39 @@
+body {
+  background-color: black;
+}
+
+div {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  /* position & size */
+  width: 20vw;
+  height: 20vh;
+
+  /* color styles */
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  background: radial-gradient(30% 51% at 10% 20%, pink, transparent),
+    radial-gradient(30% 51% at 90% 80%, royalblue, transparent);
+
+  /* text properties */
+  font-family: "Courier New", Courier, monospace;
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 20vh;
+
+  /* etc */
+  cursor: pointer;
+}
+
+p:hover {
+  background: radial-gradient(70% 119% at 10% 80%, pink, transparent),
+    radial-gradient(70% 119% at 90% 20%, royalblue, transparent);
+}
