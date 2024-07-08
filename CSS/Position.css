@@ -1,0 +1,51 @@
+main, section, article, div {
+    border: 1px solid black;
+    padding: 20px;
+    font-weight: bold;
+}
+
+main {
+    max-width: 50vw;
+    margin: 0 auto;
+    background-color: yellow;
+}
+
+section {
+    background-color: lime;
+    position: relative;
+}
+
+article {
+    background-color: cyan;
+}
+
+div {
+    background-color: white;
+}
+
+div.relative {
+    position: relative;
+    top: 20px;
+    right: 50px;
+    z-index: 1;
+}
+
+div.absolute {
+    position: absolute;
+    background-color: lightgray;
+    top: 0px;
+    right: 0px;
+}
+
+div.fixed {
+    position: fixed;
+    background-color: gray;
+    bottom: 5vh;
+    right: 5vw;
+    border-radius: 10px;
+}
+
+div.sticky {
+    position: sticky;
+    top: 50px;
+}

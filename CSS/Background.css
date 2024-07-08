@@ -1,0 +1,53 @@
+.red {
+    background-color: red;
+    width: 5vw;
+    height: 10vh;
+}
+
+.image {
+    background-image: url("../rsc/white-background.png");
+    background-repeat: repeat;
+    background-position: top left;
+    width: 20vw;
+    height: 30vh;
+    border: 1px solid black;
+    font-weight: 500;
+    display: inline-block;
+    overflow-y: scroll;
+}
+
+.attachment-scroll {
+    background-attachment: scroll;
+}
+
+.attachment-fixed {
+    background-attachment: fixed;
+}
+
+.attachment-local {
+    background-attachment: local;
+}
+
+.background-size {
+    background-image: url("../rsc/Senna.png");
+    width: 30vw;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+}
+
+.linear-gradient {
+    width: 30vw;
+    height: 30vh;
+    border: 1px solid black;
+    background: linear-gradient(to right, red 20%, blue 80%);
+}
+
+.radial-gradient {
+    width: 30vw;
+    height: 30vh;
+    border: 1px solid black;
+    background: radial-gradient(circle at 10% 50%, white, yellow, orange, red);
+}
