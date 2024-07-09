@@ -1,0 +1,80 @@
+a {
+  font-size: 32px;
+}
+
+a:link {
+  color: cyan;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  color: lime;
+  font-weight: bold;
+}
+
+fieldset:hover {
+  background-color: lightgray;
+  box-shadow: 0 0 20px gray;
+}
+
+a:active {
+  color: yellow;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+input:focus {
+  outline: none;
+  border: 3px solid red;
+  border-radius: 5px;
+  box-shadow: 0 0 20px pink;
+}
+
+li:nth-child(odd) {
+  background-color: lightskyblue;
+}
+
+li:not(.target) {
+  font-size: 30px;
+}
+
+.required::before {
+  content: "*";
+  margin-right: 2px;
+  color: red;
+  font-size: 20px;
+}
+
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  width: 10vw;
+  top: 0;
+  left: 120%;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.letter::first-letter {
+  font-size: 2em;
+  color: steelblue;
+}
+.line::first-line {
+  font-size: 1.5em;
+  background-color: yellow;
+}
+
+p::selection {
+  background-color: green;
+  color: white;
+}

@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+.outline, .box {
+    width: 5vw;
+    height: 5vw;
+}
+
+.outline {
+    border: 3px solid royalblue;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.box {
+    background-color: deepskyblue;
+}
+
+.box1 {
+    transform: translate(20px, 20px);
+}
+
+.box2 {
+    transform: scale(1.5, 0.8);
+}
+
+.box3 {
+    transform: rotateY(-25deg);
+}
+
+.outline {
+    perspective: 100px;
+}
+
+.box4 {
+    transform: skew(-15deg, -10deg);
+}
