@@ -1,0 +1,27 @@
+/*
+~ 400 : red
+401~ 600 : green
+600 ~ : blue
+*/
+@media (max-width: 400px) {
+    body {
+        background-color: red;
+    }
+}
+@media (min-width: 401px) and (max-width: 600px) {
+    body {
+        background-color: green;
+    }
+}
+@media (min-width: 600px) {
+    body {
+        background-color: blue;
+    }
+}
+
+@media print {
+    p {
+        color: yellow;
+        font-weight: bold;
+    }
+}

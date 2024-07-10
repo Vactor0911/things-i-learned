@@ -1,0 +1,97 @@
+.shape {
+    margin: 40px auto;
+    width: 10vw;
+    height: 10vw;
+    background-color: red;
+}
+
+.animation1 {
+    animation-name: change-color;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.animation2 {
+    animation: change-radius 2s infinite;
+}
+
+@keyframes change-color {
+    from {
+        background-color: red;
+    }
+    50% {
+        background-color: blue;
+    }
+    to {
+        background-color: red;
+    }
+}
+
+@keyframes change-radius {
+    from {
+        border-radius: 0;
+    }
+    50% {
+        border-radius: 50%;
+    }
+    to {
+        border-radius: 0;
+    }
+}
+
+/* Loading Animation */
+.animation-wrapper {
+    height: 10vh;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    left: 50px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    animation: move-circle 1.5s infinite;
+}
+
+.circle:nth-child(2) {
+    left: 100px;
+    animation-delay: 0.1s;
+}
+.circle:nth-child(3) {
+    left: 150px;
+    animation-delay: 0.2s;
+}
+.circle:nth-child(4) {
+    left: 200px;
+    animation-delay: 0.3s;
+}
+.circle:nth-child(5) {
+    left: 250px;
+    animation-delay: 0.4s;
+}
+.circle:nth-child(6) {
+    left: 300px;
+    animation-delay: 0.5s;
+}
+.circle:nth-child(7) {
+    left: 350px;
+    animation-delay: 0.6s;
+}
+.circle:nth-child(8) {
+    left: 400px;
+    animation-delay: 0.7s;
+}
+
+@keyframes move-circle {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    50% {
+        transform: translate(0, 50px) scale(2);
+        background-color: red;
+    }
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+}
