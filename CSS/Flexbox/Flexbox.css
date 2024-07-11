@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  background-color: royalblue;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /*flex-flow: column wrap*/
+}
+
+.flex-item {
+  color: white;
+  width: 4vw;
+  height: 4vw;
+  background-color: deepskyblue;
+  text-align: center;
+  border: 1px solid black;
+}

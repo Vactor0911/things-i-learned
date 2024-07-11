@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container {
+  background-color: darkslategray;
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.nav-item a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item:hover {
+  background-color: darkcyan;
+  border-radius: 10%;
+}

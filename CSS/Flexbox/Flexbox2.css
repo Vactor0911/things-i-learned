@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  background-color: royalblue;
+  width: 20vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+
+.flex-item {
+  color: white;
+  width: 4vw;
+  height: 4vw;
+  background-color: deepskyblue;
+  text-align: center;
+  border: 1px solid black;
+}
