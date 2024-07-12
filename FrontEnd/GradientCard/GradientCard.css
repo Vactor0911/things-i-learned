@@ -1,39 +1,68 @@
-body {
-  background-color: black;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-div {
+body {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
 
-p {
-  /* position & size */
+.card {
+  /* Basic */
   width: 20vw;
-  height: 20vh;
-
-  /* color styles */
-  color: white;
-  background-color: black;
+  height: 10vw;
   border: 1px solid white;
   border-radius: 10px;
-  background: radial-gradient(30% 51% at 10% 20%, pink, transparent),
-    radial-gradient(30% 51% at 90% 80%, royalblue, transparent);
+  position: relative;
+  overflow: hidden;
 
-  /* text properties */
-  font-family: "Courier New", Courier, monospace;
-  font-size: 32px;
-  font-weight: 900;
+  /* Texts & Fonts */
   text-align: center;
   line-height: 20vh;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 26px;
+  font-weight: bold;
 
-  /* etc */
+  /* Etc */
   cursor: pointer;
 }
 
-p:hover {
-  background: radial-gradient(70% 119% at 10% 80%, pink, transparent),
-    radial-gradient(70% 119% at 90% 20%, royalblue, transparent);
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+
+  border-radius: 50px;
+  filter: blur(35px);
+
+  z-index: -1;
+  transition: 2s ease-out;
+}
+
+.card::before {
+  top: -25%;
+  left: -5%;
+  background: pink;
+}
+
+.card::after {
+  bottom: -25%;
+  right: -5%;
+  background: skyblue;
+}
+
+.card:hover::before {
+  transform: translateY(100%) scale(2);
+}
+
+.card:hover::after {
+  transform: translateY(-100%) scale(2);
 }
