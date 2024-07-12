@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.card {
+  /* Basics */
+  width: 20vw;
+  height: 20vw;
+  border: 3px solid white;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+
+  /* Texts & Fonts */
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  line-height: 20vw;
+
+  /* Etc */
+  cursor: pointer;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  top: -300%;
+  left: -300%;
+  
+  opacity: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    black 100%
+  );
+  transform: rotate(30deg);
+}
+
+.card:hover::before {
+  animation: shine 5s ease-in-out infinite;
+}
+
+@keyframes shine {
+  30% {
+    opacity: 1;
+    top: -50%;
+    left: -50%;
+  }
+  100% {
+    opacity: 0;
+    top: -50%;
+    left: -50%;
+  }
+}
