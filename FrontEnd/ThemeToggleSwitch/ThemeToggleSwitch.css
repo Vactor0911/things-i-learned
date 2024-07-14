@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  --changeTime: 0.3s;
+}
+
+label {
+  width: 500px;
+  height: 200px;
+  position: relative;
+  display: block;
+  background: #ebebeb;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px #00000055, inset 0px -5px 15px #ffffff55;
+  cursor: pointer;
+  transition: var(--changeTime) ease-out;
+}
+
+label::after {
+  content: "";
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(180deg, #fc9, #d8860b);
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px #00000033;
+  transition: var(--changeTime) ease-out;
+}
+
+input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+input:checked + label {
+  background: #242424;
+}
+
+input:checked + label:after {
+  left: 490px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+label:active:after {
+  width: 220px;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  z-index: -1;
+  position: absolute;
+  transition: 0.3s ease-out;
+}
+
+input:checked + label + .background {
+  background: #242424;
+}
+
+input + label svg {
+  position: absolute;
+  width: 120px;
+  top: -300px;
+  left: 40px;
+  z-index: 1;
+  transition: var(--changeTime) ease-out;
+}
+
+input + label svg.moon {
+  opacity: 0;
+  transform: rotate(-180deg);
+}
+
+input:checked + label svg {
+  left: 340px;
+}
+
+input:checked + label svg.sun {
+  opacity: 0;
+  transform: rotate(180deg);
+}
+
+input:checked + label svg.moon {
+  opacity: 1;
+  transform: rotate(0deg);
+}
