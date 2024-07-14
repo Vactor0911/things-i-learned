@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #252525;
+}
+
+section {
+  width: 70vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
+}
+
+div {
+  margin: 10px;
+  padding: 20px;
+  width: 20vw;
+  height: 35vh;
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  line-height: 1.5;
+  border: 1px solid gray;
+  border-radius: 15px;
+  overflow: hidden;
+  background: linear-gradient(
+    to right bottom,
+    #101010 0%,
+    #151515 20%,
+    #333 50%,
+    #252525 90%
+  );
+  cursor: pointer;
+}
+
+div::after {
+  content: "";
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  top: -150%;
+  filter: blur(35px);
+  background: #666;
+  border-radius: 50%;
+  transition: 0.5s ease-out;
+}
+
+div:hover::after {
+  top: -20%;
+}
+
+div > img {
+  width: 100%;
+  height: 60%;
+  background-position: bottom;
+  border-radius: 10px;
+  z-index: 1;
+  filter: blur(1px);
+  transition: 0.5s ease-out;
+}
+
+div:hover > img {
+  filter: blur(0);
+  box-shadow: 0 60px 50px -5px #111;
+}
+
+div > h1,
+div > p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div > h1 {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 2% 0;
+}
+
+div > p {
+  color: #999999;
+  font-size: 14px;
+}
