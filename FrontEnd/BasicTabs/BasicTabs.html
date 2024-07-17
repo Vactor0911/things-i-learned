@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Tabs</title>
+    <link rel="stylesheet" href="BasicTabs.css" />
+    <script src="BasicTabs.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>CSS Tabs</h2>
+      <div class="tabs">
+        <button class="tab-menu selected" onclick="getData(event, 'home')">
+          <h5>HOME</h5>
+        </button>
+        <button class="tab-menu" onclick="getData(event, 'html')">
+          <h5>HTML</h5>
+        </button>
+        <button class="tab-menu" onclick="getData(event, 'css')">
+          <h5>CSS</h5>
+        </button>
+        <button class="tab-menu" onclick="getData(event, 'javascript')">
+          <h5>JAVASCRIPT</h5>
+        </button>
+      </div>
+
+      <div class="content" id="home">
+        <h3>Geeks Help</h3>
+        <h5>
+          Geeks Help is an independent website for Developers, Programmers,
+          Computer Science students. We provide syllabus and practical problem
+          solutions online.
+        </h5>
+      </div>
+      <div class="content" id="html">
+        <h3>HTML</h3>
+        <h5>
+          HTML is and acronym which stands for Hyper Text Markup Language which
+          is used for creating web page and web applications. Let's see what is
+          meant by Hypertext Markup Language , and web page.
+        </h5>
+      </div>
+      <div class="content" id="css">
+        <h3>CSS</h3>
+        <h5>
+          CSS tutorial or CSS 3 tutorial provides basic and advanced concepts of
+          CSS technology. Our CSS tutorial is developed for beginners and
+          professionals.
+        </h5>
+      </div>
+      <div class="content" id="javascript">
+        <h3>JAVASCRIPT</h3>
+        <h5>
+          JavaScript (js) is a light-weight object-oriented programming language
+          which is used by several websites for scripting the webpages. It is an
+          interpreted, full-fledged programming language that enables dynamic
+          interactivity on websites when applied to an HTML document. It was
+          introduced in the year 1995 for adding programs to the webpages in the
+          Netscape Navigator browser.
+        </h5>
+      </div>
+    </div>
+  </body>
+</html>
