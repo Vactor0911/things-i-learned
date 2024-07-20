@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #252839;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+}
+
+.neon-list {
+  position: relative;
+  text-decoration: none;
+  font-size: 4em;
+  letter-spacing: 2px;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--color);
+}
+
+.neon-list::before {
+  content: attr(data-text);
+  position: absolute;
+  color: var(--color);
+  width: 0;
+  overflow: hidden;
+  transition: 0.5s ease-out;
+  border-right: 8px solid var(--color);
+}
+
+.neon-list:hover::before {
+  width: 100%;
+  filter: drop-shadow(0px 0px 25px var(--color));
+}
