@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 20px;
+  width: 30vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  background: rgb(243, 243, 243);
+}
+
+.container h1 {
+  user-select: none;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+  gap: 5px;
+}
+
+.input input {
+  height: 70px;
+  text-align: right;
+  border: none;
+  pointer-events: none;
+  background: none;
+}
+
+#input-temp {
+  color: gray;
+  font-size: 1.5em;
+}
+
+#input-result {
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.buttons button {
+  margin: 5px;
+  height: 70px;
+  font-size: 1.5em;
+  background: white;
+  border: 1px solid rgba(200, 200, 200, 0.5);
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+#btn-result {
+    background: rgb(0, 90, 158);
+    color: white;
+}
+
+.buttons button:active {
+    box-shadow: none;
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
