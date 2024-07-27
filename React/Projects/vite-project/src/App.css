@@ -1,0 +1,6 @@
+/* CSS 스타일 리셋 (무조건 해야함) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
