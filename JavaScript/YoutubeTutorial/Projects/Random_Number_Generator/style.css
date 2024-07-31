@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#btn-roll {
+    font-size: 2em;
+    padding: 5px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#lbl-number {
+    font-size: 3em;
+}
