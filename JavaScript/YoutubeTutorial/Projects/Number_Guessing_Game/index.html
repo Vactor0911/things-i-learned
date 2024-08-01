@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article>
+      <h1>Number Guessing Game</h1>
+      <p id="span-guess">
+        Guess a number between <strong id="min-number"></strong> and
+        <strong id="max-number"></strong>
+      </p>
+      <h3>Attempts</h3>
+      <div class="attempts-container">
+        <div id="attempt1"></div>
+        <div id="attempt2"></div>
+        <div id="attempt3"></div>
+        <div id="attempt4"></div>
+        <div id="attempt5"></div>
+      </div>
+      <div class="input-container">
+        <span id="span-up-or-down">◆</span>
+        <input type="text" id="input-number" />
+        <button id="btn-submit">Submit</button>
+      </div>
+    </article>
+    <script src="index.js"></script>
+  </body>
+</html>
