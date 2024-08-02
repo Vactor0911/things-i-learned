@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  user-select: none;
+}
+
+.container button {
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(210, 100%, 50%);
+  color: white;
+  cursor: pointer;
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.container button:hover {
+  background-color: hsl(210, 100%, 60%);
+}
+
+.container button:active {
+  background-color: hsl(210, 100%, 70%);
+}
+
+.container input {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#dice-images img {
+  width: 64px;
+  height: 64px;
+  margin: 5px;
+}
